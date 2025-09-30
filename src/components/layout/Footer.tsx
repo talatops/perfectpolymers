@@ -21,8 +21,8 @@ const Footer = () => {
   return (
     <footer className="bg-brand-primary text-brand-primary-foreground">
       {/* Main Footer */}
-      <div className="container-custom section-padding">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container-custom py-8 md:py-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Company Info */}
           <div className="space-y-6">
             <div>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <Link 
                     to={link.href} 
-                    className="text-brand-primary-foreground/80 hover:text-brand-accent transition-colors text-sm"
+                    className="text-brand-primary-foreground/80 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -66,7 +66,7 @@ const Footer = () => {
                 <li key={link.label}>
                   <Link 
                     to={link.href} 
-                    className="text-brand-primary-foreground/80 hover:text-brand-accent transition-colors text-sm"
+                    className="text-brand-primary-foreground/80 hover:text-white transition-colors text-sm"
                   >
                     {link.label}
                   </Link>
@@ -77,8 +77,8 @@ const Footer = () => {
 
           {/* Contact & Newsletter */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Get In Touch</h3>
-            <div className="space-y-4 mb-6">
+            <h3 className="font-semibold text-lg mb-3">Get In Touch</h3>
+            <div className="space-y-3 mb-4">
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-1 text-brand-accent flex-shrink-0" />
                 <div className="text-sm text-brand-primary-foreground/80">
@@ -90,7 +90,7 @@ const Footer = () => {
                 <Phone className="h-4 w-4 text-brand-accent flex-shrink-0" />
                 <a 
                   href="tel:+971588792355" 
-                  className="text-sm text-brand-primary-foreground/80 hover:text-brand-accent transition-colors"
+                  className="text-sm text-brand-primary-foreground/80 hover:text-white transition-colors"
                 >
                   +971 58 8792355
                 </a>
@@ -99,7 +99,7 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-brand-accent flex-shrink-0" />
                 <a 
                   href="mailto:info@perfectpolymers.co" 
-                  className="text-sm text-brand-primary-foreground/80 hover:text-brand-accent transition-colors"
+                  className="text-sm text-brand-primary-foreground/80 hover:text-white transition-colors"
                 >
                   info@perfectpolymers.co
                 </a>
@@ -107,7 +107,7 @@ const Footer = () => {
             </div>
 
             {/* Newsletter Signup */}
-            <div className="space-y-3">
+            <div className="space-y-2">
               <h4 className="font-medium">Stay Updated</h4>
               <div className="flex gap-2">
                 <Input
@@ -132,10 +132,10 @@ const Footer = () => {
               © 2024 Perfect Polymers. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm">
-              <Link to="/privacy" className="text-brand-primary-foreground/60 hover:text-brand-accent transition-colors">
+              <Link to="/privacy" className="text-brand-primary-foreground/60 hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="/terms" className="text-brand-primary-foreground/60 hover:text-brand-accent transition-colors">
+              <Link to="/terms" className="text-brand-primary-foreground/60 hover:text-white transition-colors">
                 Terms of Service
               </Link>
             </div>

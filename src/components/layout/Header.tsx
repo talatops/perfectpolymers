@@ -44,11 +44,11 @@ const Header = () => {
           {/* Mobile: compact action buttons */}
           <div className="sm:hidden grid grid-cols-3 gap-2">
             <a
-              href="tel:+971588792355"
+              href="https://wa.me/971588792355"
               className="bg-white/10 hover:bg-white/20 transition-colors rounded-md px-3 py-2 text-xs flex items-center justify-center gap-1"
             >
               <Phone className="h-4 w-4" />
-              Call
+              WhatsApp
             </a>
             <a
               href="mailto:info@perfectpolymers.co"
@@ -64,9 +64,9 @@ const Header = () => {
           {/* Desktop: detailed contact bar */}
           <div className="hidden sm:flex flex-col sm:flex-row justify-between items-center text-sm gap-2">
             <div className="flex items-center gap-6">
-              <a href="tel:+971588792355" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
+              <a href="https://wa.me/971588792355" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
                 <Phone className="h-4 w-4" />
-                +971 58 8792355
+                WhatsApp: +971 58 8792355
               </a>
               <a href="mailto:info@perfectpolymers.co" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
                 <Mail className="h-4 w-4" />

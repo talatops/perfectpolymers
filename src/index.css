@@ -6,12 +6,12 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Professional B2B Polymer Trading */
-    --brand-primary: 158 80% 18%; /* Dark Green #0E5E3A */
+    /* Brand Colors - Blue Palette */
+    --brand-primary: 217 91% 60%; /* Blue 500 #3B82F6 */
     --brand-primary-foreground: 0 0% 100%;
-    --brand-secondary: 200 73% 15%; /* Deep Navy #0D2B3E */
+    --brand-secondary: 222 47% 17%; /* Slate/Navy #1F2937 */
     --brand-secondary-foreground: 0 0% 100%;
-    --brand-accent: 162 76% 45%; /* Bright Green #20C997 */
+    --brand-accent: 204 94% 50%; /* Sky 500 #0EA5E9 (light blue) */
     --brand-accent-foreground: 0 0% 100%;
     
     /* Background System */
@@ -34,16 +34,16 @@
     --popover-foreground: 220 15% 12%;
     
     /* Interactive Elements */
-    --primary: 158 80% 18%;
+    --primary: 217 91% 60%; /* Match brand-primary (blue) */
     --primary-foreground: 0 0% 100%;
     
     --secondary: 210 20% 96%;
-    --secondary-foreground: 158 80% 18%;
+    --secondary-foreground: 217 91% 30%;
     
     --muted: 210 20% 96%;
     --muted-foreground: 215 10% 42%;
     
-    --accent: 162 76% 45%;
+    --accent: 204 94% 50%; /* light blue */
     --accent-foreground: 0 0% 100%;
     
     --destructive: 0 72% 51%;
@@ -53,10 +53,10 @@
     --border: 220 13% 91%;
     --input: 220 13% 91%;
     --input-background: 0 0% 100%;
-    --ring: 158 80% 18%;
+    --ring: 217 91% 60%; /* blue focus ring */
     
     /* Status Colors */
-    --success: 142 71% 45%; /* #10B981 */
+    --success: 158 64% 52%; /* green for success */
     --warning: 38 92% 50%; /* #F59E0B */
     --info: 213 94% 68%; /* #3B82F6 */
     

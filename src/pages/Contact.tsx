@@ -120,16 +120,16 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Phone</h3>
-                    <p className="text-muted-foreground text-sm mb-2">Call us for immediate assistance</p>
+                    <p className="text-muted-foreground text-sm mb-2">Call or WhatsApp us</p>
                     <a 
-                      href="tel:+971588792355"
+                      href="https://wa.me/971588792355"
                       className="text-brand-primary hover:text-brand-accent transition-colors font-medium"
                     >
                       +971 58 8792355 <span className="text-xs text-muted-foreground">(UAE)</span>
                     </a>
                     <br />
                     <a 
-                      href="tel:+6640089799"
+                      href="https://wa.me/66640089799"
                       className="text-brand-primary hover:text-brand-accent transition-colors font-medium"
                     >
                       +66 4008 9799 <span className="text-xs text-muted-foreground">(Thailand)</span>

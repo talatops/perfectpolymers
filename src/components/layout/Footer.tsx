@@ -27,8 +27,8 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center">
-                  <img src="/placeholder.svg" alt="Perfect Polymers Logo" className="w-8 h-8" />
+                <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center overflow-hidden">
+                  <img src="/logo.jpeg" alt="Perfect Polymers Logo" className="w-8 h-8 object-contain bg-white rounded" />
                 </div>
                 <div>
                   <div className="text-xl font-bold">Perfect Polymers</div>

@@ -41,7 +41,28 @@ const Header = () => {
       {/* Top utility bar */}
       <div className="bg-brand-primary text-brand-primary-foreground py-2">
         <div className="container-custom">
-          <div className="flex flex-col sm:flex-row justify-between items-center text-sm gap-2">
+          {/* Mobile: compact action buttons */}
+          <div className="sm:hidden grid grid-cols-3 gap-2">
+            <a
+              href="tel:+971588792355"
+              className="bg-white/10 hover:bg-white/20 transition-colors rounded-md px-3 py-2 text-xs flex items-center justify-center gap-1"
+            >
+              <Phone className="h-4 w-4" />
+              Call
+            </a>
+            <a
+              href="mailto:info@perfectpolymers.co"
+              className="bg-white/10 hover:bg-white/20 transition-colors rounded-md px-3 py-2 text-xs flex items-center justify-center gap-1"
+            >
+              <Mail className="h-4 w-4" />
+              Email
+            </a>
+            <Button variant="brand-accent" size="sm" asChild className="justify-center">
+              <Link to="/rfq">RFQ</Link>
+            </Button>
+          </div>
+          {/* Desktop: detailed contact bar */}
+          <div className="hidden sm:flex flex-col sm:flex-row justify-between items-center text-sm gap-2">
             <div className="flex items-center gap-6">
               <a href="tel:+971588792355" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
                 <Phone className="h-4 w-4" />

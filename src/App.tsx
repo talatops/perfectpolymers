@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import RFQ from "./pages/RFQ";
 import Blog from "./pages/Blog";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
@@ -35,7 +37,6 @@ const App = () => (
             <Route path="/rfq" element={<RFQ />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<Blog />} />
-            <Route path="/download-profile" element={<div>Download Profile Page</div>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -16,7 +16,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         
-        // Brand Variants for GoGreen FZE
+        // Brand Variants for Perfect Polymers
         brand: "bg-brand-primary text-brand-primary-foreground hover:bg-brand-primary/90 shadow-md hover:shadow-lg",
         "brand-accent": "bg-brand-accent text-brand-accent-foreground hover:bg-brand-accent/90 shadow-md hover:shadow-lg",
         "brand-outline": "border-2 border-brand-primary text-brand-primary bg-transparent hover:bg-brand-primary hover:text-brand-primary-foreground",

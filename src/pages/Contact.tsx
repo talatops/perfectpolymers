@@ -100,16 +100,39 @@ const Contact = () => {
               <Card className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-brand-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-card-foreground mb-2">Global Headquarters</h3>
+                    <p className="text-muted-foreground text-sm mb-2">Perfect Polymers FZC</p>
+                    <address className="text-brand-primary not-italic">
+                      SPC Free Zone<br />
+                      Sharjah, United Arab Emirates
+                    </address>
+                  </div>
+                </div>
+              </Card>
+
+              <Card className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="h-6 w-6 text-brand-primary" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Phone</h3>
                     <p className="text-muted-foreground text-sm mb-2">Call us for immediate assistance</p>
                     <a 
-                      href="tel:+971559858525"
+                      href="tel:+971588792355"
                       className="text-brand-primary hover:text-brand-accent transition-colors font-medium"
                     >
-                      +971 55 985 8525
+                      +971 58 8792355 <span className="text-xs text-muted-foreground">(UAE)</span>
+                    </a>
+                    <br />
+                    <a 
+                      href="tel:+6640089799"
+                      className="text-brand-primary hover:text-brand-accent transition-colors font-medium"
+                    >
+                      +66 4008 9799 <span className="text-xs text-muted-foreground">(Thailand)</span>
                     </a>
                   </div>
                 </div>
@@ -122,29 +145,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-card-foreground mb-2">Email</h3>
-                    <p className="text-muted-foreground text-sm mb-2">Send us a detailed message</p>
+                    <p className="text-muted-foreground text-sm mb-2">General Inquiries</p>
                     <a 
-                      href="mailto:info@gogreenfze.com"
+                      href="mailto:info@perfectpolymers.co"
                       className="text-brand-primary hover:text-brand-accent transition-colors font-medium"
                     >
-                      info@gogreenfze.com
+                      info@perfectpolymers.co
                     </a>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-brand-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-brand-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-card-foreground mb-2">Address</h3>
-                    <p className="text-muted-foreground text-sm mb-2">Visit our office</p>
-                    <address className="text-brand-primary not-italic">
-                      Ajman Freezone<br />
-                      Ajman, UAE
-                    </address>
+                    <p className="text-muted-foreground text-sm mt-4 mb-2">Sales</p>
+                    <a 
+                      href="mailto:sales@perfectpolymers.co"
+                      className="text-brand-primary hover:text-brand-accent transition-colors font-medium"
+                    >
+                      sales@perfectpolymers.co
+                    </a>
                   </div>
                 </div>
               </Card>
@@ -182,118 +196,50 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="p-8">
             <h2 className="text-card-title font-semibold mb-6">Send us a Message</h2>
-            
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Name *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your full name" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Email *</FormLabel>
-                        <FormControl>
-                          <Input type="email" placeholder="your@email.com" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+            <form action="https://formsubmit.co/info@perfectpolymers.co" method="POST" className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium mb-1">Name *</label>
+                  <Input name="name" type="text" placeholder="Your full name" required />
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Phone (Optional)</FormLabel>
-                        <FormControl>
-                          <Input placeholder="+971 XX XXX XXXX" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-
-                  <FormField
-                    control={form.control}
-                    name="company"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Company (Optional)</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your company name" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                <div>
+                  <label className="block text-sm font-medium mb-1">Email *</label>
+                  <Input name="email" type="email" placeholder="your@email.com" required />
                 </div>
-
-                <FormField
-                  control={form.control}
-                  name="topic"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Topic *</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select inquiry topic" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          {topics.map((topic) => (
-                            <SelectItem key={topic} value={topic}>
-                              {topic}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Message *</FormLabel>
-                      <FormControl>
-                        <Textarea
-                          placeholder="Please describe your inquiry, requirements, or any questions you have..."
-                          className="min-h-32"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <Button type="submit" variant="hero" size="lg" className="w-full">
-                  <Send className="h-5 w-5 mr-2" />
-                  Send Message
-                </Button>
-              </form>
-            </Form>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium mb-1">Phone (Optional)</label>
+                  <Input name="phone" type="text" placeholder="+971 XX XXX XXXX" />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-1">Company (Optional)</label>
+                  <Input name="company" type="text" placeholder="Your company name" />
+                </div>
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-1">Topic *</label>
+                <select name="topic" required className="w-full border rounded px-3 py-2">
+                  <option value="">Select inquiry topic</option>
+                  <option>General Inquiry</option>
+                  <option>Product Information</option>
+                  <option>Pricing Request</option>
+                  <option>Technical Support</option>
+                  <option>Partnership Opportunities</option>
+                  <option>Bulk Orders</option>
+                  <option>Quality Concerns</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label className="block text-sm font-medium mb-1">Message *</label>
+                <Textarea name="message" placeholder="Please describe your inquiry, requirements, or any questions you have..." className="min-h-32" required />
+              </div>
+              <button type="submit" className="w-full btn btn-hero flex items-center justify-center gap-2">
+                <Send className="h-5 w-5 mr-2" />
+                Send Message
+              </button>
+            </form>
           </Card>
         </div>
       </div>

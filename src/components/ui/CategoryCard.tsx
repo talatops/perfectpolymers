@@ -38,14 +38,7 @@ const CategoryCard = ({ title, description, href, icon, productCount }: Category
         </div>
 
         {/* CTA */}
-        <div className="pt-4 border-t border-card-border/50">
-          <Button variant="ghost" className="w-full justify-between p-0 h-auto text-brand-primary hover:text-brand-accent" asChild>
-            <Link to={href}>
-              Explore Products
-              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </Button>
-        </div>
+        {/* Removed CTA button, arrow, and link as per user request */}
       </div>
     </Card>
   );

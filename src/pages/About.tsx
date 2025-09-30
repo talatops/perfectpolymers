@@ -63,7 +63,7 @@ const About = () => {
       <section className="bg-gradient-hero text-white py-16">
         <div className="container-custom">
           <div className="text-center space-y-4">
-            <h1 className="text-hero">About GoGreen FZE</h1>
+            <h1 className="text-hero">About Perfect Polymers</h1>
             <p className="text-body-large text-white/90 max-w-3xl mx-auto">
               Leading global polymer sourcing company committed to delivering quality materials, 
               competitive pricing, and exceptional service to businesses worldwide.
@@ -207,7 +207,7 @@ const About = () => {
       <section className="bg-background-muted section-padding">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <h2 className="text-section text-foreground mb-4">Why Choose GoGreen FZE</h2>
+            <h2 className="text-section text-foreground mb-4">Why Choose Perfect Polymers</h2>
             <p className="text-body text-muted-foreground max-w-3xl mx-auto">
               Discover the advantages that make us the preferred partner for businesses 
               seeking reliable polymer sourcing solutions.
@@ -243,7 +243,7 @@ const About = () => {
           <div className="text-center mb-16">
             <h2 className="text-section text-foreground mb-4">Our Stand on Sustainability</h2>
             <p className="text-body text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              At GoGreen FZE, we recognize the critical importance of environmental responsibility 
+              At Perfect Polymers, we recognize the critical importance of environmental responsibility 
               in the polymer industry. We're committed to promoting sustainable practices and 
               supporting the circular economy through innovative solutions and responsible sourcing.
             </p>

@@ -34,7 +34,6 @@ const Header = () => {
     },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
-    { label: "Download Profile", href: "/download-profile" },
   ];
 
   return (
@@ -44,13 +43,13 @@ const Header = () => {
         <div className="container-custom">
           <div className="flex flex-col sm:flex-row justify-between items-center text-sm gap-2">
             <div className="flex items-center gap-6">
-              <a href="tel:+971559858525" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
+              <a href="tel:+971588792355" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
                 <Phone className="h-4 w-4" />
-                +971 55 985 8525
+                +971 58 8792355
               </a>
-              <a href="mailto:info@gogreenfze.com" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
+              <a href="mailto:info@perfectpolymers.co" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
                 <Mail className="h-4 w-4" />
-                info@gogreenfze.com
+                info@perfectpolymers.co
               </a>
             </div>
             <Button variant="brand-accent" size="sm" asChild>
@@ -65,11 +64,9 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">GG</span>
-            </div>
+            <img src="/placeholder.svg" alt="Perfect Polymers Logo" className="w-10 h-10 rounded-lg" />
             <div className="hidden sm:block">
-              <div className="text-xl font-bold text-brand-primary">GoGreen FZE</div>
+              <div className="text-xl font-bold text-brand-primary">Perfect Polymers</div>
               <div className="text-xs text-muted-foreground">Global Polymer Sourcing</div>
             </div>
           </Link>

@@ -106,44 +106,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Featured Products Section */}
-      <section className="bg-background-muted section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-section text-foreground mb-4">
-              Featured Products
-            </h2>
-            <p className="text-body text-muted-foreground max-w-2xl mx-auto">
-              Explore our selection of high-quality featured products from leading manufacturers worldwide.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredProducts.slice(0, 6).map((product) => (
-              <ProductCard
-                key={product.id}
-                code={product.code}
-                name={product.name}
-                family={product.family}
-                gradeType={product.grade_type}
-                description={product.short_description || product.description}
-                applications={product.applications}
-                href={`/product/${product.id}`}
-                isFeatured={product.is_featured}
-              />
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <Button variant="brand-outline" size="lg" asChild>
-              <Link to="/products?featured=true">
-                View All Featured Products
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
       {/* About Teaser Section */}
       <section className="section-padding">
         <div className="container-custom">
@@ -151,7 +113,7 @@ const Index = () => {
             <div className="space-y-8">
               <div className="space-y-6">
                 <h2 className="text-section text-foreground">
-                  GoGreen at <span className="text-brand-accent">Polymer Industry</span>
+                  Perfect Polymers at <span className="text-brand-accent">Polymer Industry</span>
                 </h2>
                 <p className="text-body text-muted-foreground leading-relaxed">
                   With extensive experience in global polymer sourcing, we connect manufacturers with 
@@ -222,11 +184,10 @@ const Index = () => {
         <div className="container-custom">
           <div className="text-center max-w-4xl mx-auto space-y-8">
             <h2 className="text-section">
-              Ready to Source Your Next <span className="text-brand-accent">Polymer Solution</span>?
+              Whether you’re scaling production or looking for a reliable long-term partner, Perfect Polymers is here to help you succeed.
             </h2>
             <p className="text-body-large text-white/90">
-              Get in touch with our team of experts and discover how we can help you find the perfect 
-              materials for your project at competitive prices with reliable delivery.
+              Get in touch today and let’s start building something stronger together.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

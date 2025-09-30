@@ -28,10 +28,10 @@ const Footer = () => {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">GG</span>
+                  <img src="/placeholder.svg" alt="Perfect Polymers Logo" className="w-8 h-8" />
                 </div>
                 <div>
-                  <div className="text-xl font-bold">GoGreen FZE</div>
+                  <div className="text-xl font-bold">Perfect Polymers</div>
                   <div className="text-sm text-brand-primary-foreground/80">Global Polymer Sourcing</div>
                 </div>
               </div>
@@ -89,19 +89,19 @@ const Footer = () => {
               <div className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-brand-accent flex-shrink-0" />
                 <a 
-                  href="tel:+971559858525" 
+                  href="tel:+971588792355" 
                   className="text-sm text-brand-primary-foreground/80 hover:text-brand-accent transition-colors"
                 >
-                  +971 55 985 8525
+                  +971 58 8792355
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-brand-accent flex-shrink-0" />
                 <a 
-                  href="mailto:info@gogreenfze.com" 
+                  href="mailto:info@perfectpolymers.co" 
                   className="text-sm text-brand-primary-foreground/80 hover:text-brand-accent transition-colors"
                 >
-                  info@gogreenfze.com
+                  info@perfectpolymers.co
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ const Footer = () => {
         <div className="container-custom py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-brand-primary-foreground/60">
-              © 2024 GoGreen FZE. All rights reserved.
+              © 2024 Perfect Polymers. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm">
               <Link to="/privacy" className="text-brand-primary-foreground/60 hover:text-brand-accent transition-colors">

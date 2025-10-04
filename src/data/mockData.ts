@@ -44,14 +44,6 @@ export const categories: Category[] = [
     is_active: true,
   },
   {
-    id: "3",
-    slug: "agro",
-    name: "Agro Products",
-    description: "Agricultural products and solutions for farming and agricultural applications.",
-    sort_order: 3,
-    is_active: true,
-  },
-  {
     id: "4",
     slug: "recycled",
     name: "Recycled Materials",
@@ -265,7 +257,7 @@ export const usps = [
   },
   {
     title: "Range of Products",
-    description: "Extensive catalog of polymers, chemicals, and agro products from trusted global manufacturers.",
+    description: "Extensive catalog of polymers, chemicals, and recycled materials from trusted global manufacturers.",
     icon: "📦",
   },
   {

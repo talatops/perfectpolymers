@@ -16,7 +16,6 @@ const Header = () => {
       dropdown: [
         { label: "Polymers", href: "/products/polymers" },
         { label: "Chemicals", href: "/products/chemicals" },
-        { label: "Agro Products", href: "/products/agro" },
         { label: "Recycled Materials", href: "/products/recycled" },
         { label: "Off Spec/Off Grade", href: "/products/off-spec" },
       ],
@@ -85,7 +84,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <img src="/logo.jpeg" alt="Perfect Polymers Logo" className="w-10 h-10 rounded-lg object-contain bg-white" />
+            <img src="/logo.jpeg" alt="Perfect Polymers Logo" className="w-20 h-20 rounded-lg object-contain bg-white" />
             <div className="hidden sm:block">
               <div className="text-xl font-bold text-brand-primary">Perfect Polymers</div>
               <div className="text-xs text-muted-foreground">Global Polymer Sourcing</div>

@@ -12,33 +12,27 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 const staticProducts = [
   {
     name: "Polyethylene (PE)",
-    image: "/plastic-raw-1024x673.jpeg",
-    description: "Widely used for packaging, films, and containers."
+    image: "/plastic-raw-1024x673.jpeg"
   },
   {
     name: "Polypropylene (PP)",
-    image: "/plastic-raw-materail-500x500.webp",
-    description: "Versatile plastic for automotive, textiles, and packaging."
+    image: "/plastic-raw-materail-500x500.webp"
   },
   {
     name: "Polyvinyl Chloride (PVC)",
-    image: "/plastik1.jpeg",
-    description: "Common in pipes, profiles, and construction materials."
+    image: "/plastik1.jpeg"
   },
   {
     name: "Polystyrene (PS)",
-    image: "/unnamed.jpg",
-    description: "Used for disposable cutlery, containers, and insulation."
+    image: "/unnamed.jpg"
   },
   {
     name: "Polyethylene Terephthalate (PET)",
-    image: "/plastic-raw-1024x673.jpeg",
-    description: "Bottles, food packaging, and synthetic fibers."
+    image: "/plastic-raw-1024x673.jpeg"
   },
   {
     name: "Acrylonitrile Butadiene Styrene (ABS)",
-    image: "/plastic-raw-materail-500x500.webp",
-    description: "Durable plastic for automotive and consumer goods."
+    image: "/plastic-raw-materail-500x500.webp"
   },
 ];
 
@@ -67,8 +61,7 @@ const Products = () => {
                 className="w-32 h-32 object-contain mb-4 rounded shadow"
                 loading="lazy"
               />
-              <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
-              <p className="text-muted-foreground text-sm">{product.description}</p>
+              <h3 className="text-lg font-semibold">{product.name}</h3>
             </Card>
           ))}
         </div>

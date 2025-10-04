@@ -27,8 +27,8 @@ const Footer = () => {
           <div className="space-y-6">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-10 h-10 bg-brand-accent rounded-lg flex items-center justify-center overflow-hidden">
-                  <img src="/logo.jpeg" alt="Perfect Polymers Logo" className="w-8 h-8 object-contain bg-white rounded" />
+                <div className="w-18 h-18 bg-brand-accent rounded-lg flex items-center justify-center overflow-hidden">
+                  <img src="/logo.jpeg" alt="Perfect Polymers Logo" className="w-16 h-16 object-contain bg-white rounded" />
                 </div>
                 <div>
                   <div className="text-xl font-bold">Perfect Polymers</div>
@@ -82,8 +82,8 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-1 text-brand-accent flex-shrink-0" />
                 <div className="text-sm text-brand-primary-foreground/80">
-                  <p>Ajman Freezone</p>
-                  <p>Ajman, UAE</p>
+                  <p>SPC Free Zone</p>
+                  <p>Sharjah, UAE</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
